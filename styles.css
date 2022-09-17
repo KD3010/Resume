@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  color: rgb(90, 90, 90);
+  font-weight: bold;
+}
+
+ul {
+  margin-left: 2rem;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: rgb(103, 103, 236);
+  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.head-container {
+  margin: 3rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.info-item {
+  margin-bottom: 0.5rem;
+}
+
+.info-container h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.img {
+  border-radius: 50%;
+  min-width: 100px;
+  width: 100%;
+  height: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-container {
+  flex-basis: 50%;
+  border-right: 1px solid grey;
+}
+
+.right-container {
+  flex-basis: 50%;
+}
+
+.container {
+  margin: 1rem;
+}
+
+.section-heading {
+  color: rgb(0, 0, 0);
+}
+
+.resume-container {
+  margin-top: 2rem;
+}
+
+.resume {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: grey;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 750px) {
+  .head-container {
+    margin: 1rem;
+  }
+
+  .info-container h1 {
+    font-size: 2rem;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .left-container,
+  .right-container {
+    flex-basis: 100%;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
